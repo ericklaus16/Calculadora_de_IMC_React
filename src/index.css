@@ -11,3 +11,81 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.inputArea {
+  max-width: 25%;
+  margin-right: 5%;
+}
+
+.input {
+  width: 100%;
+  margin-top: 10%;
+  font-size: 14px;
+  height: 5vh;
+}
+
+.appFuncTitle {
+  color: rgb(37, 37, 41);
+  font-size: xxx-large;
+}
+
+.explanation {
+  color: gray;
+  font-size: larger;
+  margin-top: 10%;
+}
+
+.cardsArea {
+  max-width: 35%;
+}
+
+.nivelTitulo {
+  font-weight: bold;
+}
+
+.nivelDesc {
+  font-weight: bold;
+}
+
+@media (max-width: 770px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .inputArea {
+    margin-left: 12%;
+  }
+
+  .cardsArea{
+    margin-top: 10%;
+  }
+}
+
+@media (max-width: 1340px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .inputArea {
+    margin-left: 12%;
+  }
+
+  .cardsArea{
+    margin-top: 10%;
+    margin-left: 8%;
+  }
+}
